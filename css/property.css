@@ -1,0 +1,66 @@
+:root {
+            --primary-color: #2c3e50;
+            --secondary-color: #3498db;
+            --light-color: #ecf0f1;
+            --dark-color: #2c3e50;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            color: var(--dark-color);
+            font-size: large;
+        }
+
+        .hero-section {
+            background-color: var(--light-color);
+            padding: 60px 0 40px;
+            margin-bottom: 40px;
+        }
+
+        .filter-section {
+            background-color: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 15px rgba(0, 0, 0, 0.05);
+            margin-bottom: 30px;
+        }
+
+        .property-card {
+            border: none;
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 3px 15px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            margin-bottom: 30px;
+        }
+
+        .property-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 5px 20px rgba(0, 0, 0, 0.15);
+        }
+
+        .property-img {
+            height: 200px;
+            object-fit: cover;
+            width: 100%;
+        }
+
+        .property-location {
+            color: var(--secondary-color);
+            font-weight: 600;
+        }
+
+        .property-price {
+            font-weight: 700;
+            color: var(--primary-color);
+        }
+
+        .btn-primary {
+            background-color: var(--secondary-color);
+            border: none;
+            padding: 8px 20px;
+        }
+
+        .btn-primary:hover {
+            background-color: #2980b9;
+        }

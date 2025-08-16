@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PF - Properties</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="/css/property.css">
+</head>
+
+<body>
+
+    <!-- Hero Section -->
+    <section class="hero-section">
+        <div class="container">
+            <h1 class="text-center mb-4">Browse through our extensive real estate listing</h1>
+
+            <!-- Filter & Search -->
+            <div class="filter-section">
+                <div class="row g-3">
+                    <div class="col-md-3">
+                        <select class="form-select" id="locationFilter">
+                            <option selected value="">Location</option>
+                            <option value="Uttara">Uttara</option>
+                            <option value="Gazipur">Gazipur</option>
+                            <option value="Mirpur">Mirpur</option>
+                            <option value="Jatrabari">Jatrabari</option>
+                            <option value="Ashulia">Ashulia</option>
+                            <option value="Dhanmondi">Dhanmondi</option>
+                            <option value="Banani">Banani</option>
+                            <option value="Bashundhara">Bashundhara</option>
+                            <option value="Badda">Badda</option>
+                            <option value="Mohakhali">Mohakhali</option>
+                            <option value="Gulshan">Gulshan</option>
+
+                        </select>
+                    </div>
+                    <div class="col-md-3">
+                        <select class="form-select" id="typeFilter">
+                            <option selected value="">Type</option>
+                            <option value="House">House</option>
+                            <option value="Apartment">Apartment</option>
+                            <option value="Cottage">Cottage</option>
+                            <option value="Villas">Villas</option>
+                        </select>
+                    </div>
+                    <div class="col-md-3">
+                        <select class="form-select" id="categoryFilter">
+                            <option selected value="">Category</option>
+                            <option value="For Sale">For Sale</option>
+                            <option value="For Rent">For Rent</option>
+                        </select>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="input-group">
+                            <input type="text" class="form-control" id="searchInput" placeholder="Search...">
+                            <button class="btn btn-primary" type="button" id="searchButton">
+                                <i class="fas fa-search"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Property Listings -->
+            <div class="row" id="propertyListings">
+                <!-- Properties will be loaded here dynamically -->
+            </div>
+        </div>
+
+        <!-- Frequntly Asked Questions -->
+        <div class="accordion container" id="accordionExample">
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="headingOne">
+                    <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                        What types of properties does Urbanest offer?
+                    </button>
+                </h2>
+                <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne"
+                    data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                        <strong>We're offering eco-friendly types properties, </strong> including apartments, townhouses, and lofts. Our properties are designed to suit different lifestyles, whether you're a single professional, a couple, or a family looking for a sustainable home in the heart of the city. Each property is equipped with modern amenities and is located in vibrant neighborhoods that promote a sense of community and convenience.
+                        
+                    </div>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="headingTwo">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                        How do I schedule a property tour?
+                    </button>
+                </h2>
+                <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
+                    data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                        <strong>As You when wnat, </strong> But you can schedule a property tour by contacting our customer service team through the contact form on our website or by calling our office directly. Our team will be happy to assist you in finding a suitable time for your visit.
+                        We recommend scheduling tours in advance to ensure availability, especially for popular properties. During the tour, you will have the opportunity to explore the property, ask questions, and get a feel for the neighborhood. Our knowledgeable staff will be there to guide you and provide any additional information you may need.
+                    </div>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="headingThree">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                        Can I rent an Urbanest property instead of purchasing?
+                    </button>
+                </h2>
+                <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree"
+                    data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                        <strong>Yes, You can.</strong> Our offers a wide range of modern, eco-friendly urban living spaces, including apartments, townhouses, and lofts. Our properties are designed to suit different lifestyles, whether you're a single professional, a couple, or a family looking for a sustainable home in the heart of the city. Each property is equipped with modern amenities and is located in vibrant neighborhoods that promote a sense of community and convenience.
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+    </section>
+
+
+
+
+    <!-- Bootstrap JS Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Custom JavaScript -->
+     <script src="/js/property.js"></script>
+
+</body>
+
+</html>
