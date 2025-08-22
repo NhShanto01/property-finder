@@ -209,25 +209,6 @@ function renderProperties(filters = {}) {
 `;
 
 
-        // propertyCard.innerHTML = `
-        //             <div class="property-card">
-        //                 <img src="${property.image}" class="property-img" alt="${property.title}">
-        //                 <div class="p-4">
-        //                     <p class="property-location">${property.location}</p>
-        //                     <h3>${property.title}</h3>
-        //                     <div class="d-flex justify-content-between my-4">
-        //                         <p><i class="fas fa-bed me-2"></i> ${property.beds} Bed</p>
-        //                         <p><i class="fas fa-bath me-2"></i> ${property.baths} Bath</p>
-        //                         <p><i class="fas fa-ruler-combined me-2"></i> ${property.sqft} sqft.</p>
-
-
-        //                     </div>
-        //                     <p class="property-price">${property.price.toLocaleString()} BDT</p>
-        //                     <button class="btn btn-primary">View</button>
-        //                 </div>
-        //             </div>
-        //         `;
-
         propertyListings.appendChild(propertyCard);
     });
 

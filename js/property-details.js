@@ -243,7 +243,9 @@
                         <div class="col-lg-4">
                             <div class="agent-card">
                                 <div>
-                                    <button class="btn-contact"><i class="fas fa-phone-alt me-2"></i> Contact US</button>
+                                    <a href="/contact.html" class="text-decoration-none btn-primary">
+                                        <i class="fas fa-phone-alt me-2"></i> Contact US
+                                    </a>
                                 </div>
                             </div>
                             
@@ -266,7 +268,7 @@
                                         <option>4:00 PM</option>
                                     </select>
                                 </div>
-                                <button class="btn btn-primary w-100" id="scheduleTour">Schedule Now</button>
+                                <button class="btn-primary w-100" id="scheduleTour">Schedule Now</button>
                             </div>
                         </div>
                     </div>
@@ -296,9 +298,9 @@
                 alert(`Tour scheduled for ${date} at ${time}. We'll contact you to confirm.`);
             });
 
-            document.querySelector('.btn-contact').addEventListener('click', function () {
-                alert('Connecting you with the agent...');
-            });
+            // document.querySelector('.btn-contact').addEventListener('click', function () {
+            //     alert('Connecting you with the agent...');
+            // });
 
             // Render similar properties
             renderSimilarProperties(property.id);
@@ -341,7 +343,7 @@
                                 <p><i class="fas fa-ruler-combined me-2"></i> ${property.sqft} sqft.</p>
                             </div>
                             <p class="property-price">${property.price.toLocaleString()} BDT</p>
-                            <a href="property-details.html?id=${property.id}" class="btn btn-primary">View</a>
+                            <a href="property-details.html?id=${property.id}" class="btn-primary text-decoration-none">View</a>
                         </div>
                     </div>
                 `;

@@ -1,42 +1,22 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
-    <!-- Font Awesome for icons -->
+    <title>Contact Us</title>
+    <!-- Bootstrap 5 CSS & JS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Bootstrap Icons -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <title>Sign-In</title>
+
     <link rel="stylesheet" href="./css/style.css">
-    <style>
-        .form-div {
-            width: 400px;
-        }
 
-        .logo {
-            width: 100%;
-            background-color: #0B2D27;
-            color: aliceblue;
-            border-radius: 10px;
-            text-align: center;
-            padding: 20px 0;
-            margin-bottom: 20px;
-        }
-
-        .logo a {
-            text-decoration: none;
-            font-size: 1.8rem;
-            /* slightly bigger text */
-            color: white;
-        }
-    </style>
 </head>
-
 <body>
 
     <!-- navbar -->
-    <nav class="navbar fixed-top navbar-expand-lg navbar-light bg-light px-4">
+    <nav class="navbar sticky-top navbar-expand-lg navbar-light bg-light px-4">
         <a class="navbar-brand fw-bold" href="#">
             Urban <span class="text-success">Nest</span>
         </a>
@@ -74,39 +54,25 @@
         </div>
     </nav>
 
-    <section>
-        <div class="container form-div shadow-lg p-3 my-5 bg-body rounded-4 border border-2">
-            <div class="logo">
-                <a href="#">
-                    Urban <span class="text-success fw-bold">Nest</span>
-                </a>
+    <div class="container my-5">
+        <h1>Contact Us</h1>
+        <form>
+            <div class="mb-3">
+                <label for="name" class="form-label">Name</label>
+                <input type="text" class="form-control" id="name" required>
             </div>
-
-            <hr>
-
-            <form id="signupForm">
-                <div class="form-floating my-3">
-                    <input type="email" class="form-control" id="floatingEmail" placeholder="name@example.com" required>
-                    <label for="floatingEmail">Email address</label>
-                </div>
-                <div class="form-floating mb-3">
-                    <input type="password" class="form-control" id="floatingPassword" placeholder="Password" required>
-                    <label for="floatingPassword">Password</label>
-                </div>
-
-                <button type="submit" class="btn text-white mb-4 mx-auto d-block text-decoration-none w-100"
-                    style="background-color: #4c904c;">
-                    Sign In
-                </button>
-
-                <div class="d-flex justify-content-between">
-                    <p>New to Here? Create an account </p>
-                    <a class="text-decoration-none" href="Sign-Up.html" style="color: #4c904c;"> Sign Up </a>
-                </div>
-            </form>
-        </div>
-    </section>
-
+            <div class="mb-3">
+                <label for="email" class="form-label">Email</label>
+                <input type="email" class="form-control" id="email" required>
+            </div>
+            <div class="mb-3">
+                <label for="message" class="form-label">Message</label>
+                <textarea class="form-control" id="message" rows="4" required></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary">Send Message</button>
+        </form>
+    </div>
+    
     <footer class="footer">
         <div class="footer-top">
             <!-- Left Column -->
@@ -161,5 +127,4 @@
     </footer>
 
 </body>
-
 </html>
