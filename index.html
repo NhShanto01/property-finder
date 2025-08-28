@@ -11,7 +11,6 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
     <!-- Bootstrap Icons -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-
     <link rel="stylesheet" href="./css/style.css">
 
 </head>
@@ -45,14 +44,12 @@
             </ul>
 
             <div class="d-flex align-items-center">
-
-
                 <!-- Sign In Button -->
-                <a class="text-decoration-none" href="Sign-In.html"><button
-                        class="btn btn-outline-success fw-bold d-flex align-items-center">
+                <a class="text-decoration-none" href="Sign-In.html">
+                    <button class="btn btn-outline-success fw-bold d-flex align-items-center">
                         Sign in
-                    </button></a>
-
+                    </button>
+                </a>
             </div>
         </div>
     </nav>
@@ -61,18 +58,18 @@
     <section class="hero">
         <div class="overlay"></div>
         <div class="hero-content">
-
             <div class="left-text">
                 <p>Discover modern, sustainable living spaces in the heart of the city.</p>
             </div>
 
-            <div class="left-content ">
-                <h1>Find Your Desired<br>Home For You.</h1>
+            <div class="left-content">
+                <div class="center-text">
+                    <h1>Find Your Desired<br>Home For You.</h1>
+                </div>
                 <div class="buttons">
-                    <a href="/property-listing.html" class="btn-primary text-decoration-none">
+                    <a href="/property-listing.html" class="btn-primary">
                         Explore properties →
                     </a>
-                    <!-- <button class="btn-outline">Click Here</button> -->
                 </div>
             </div>
 
@@ -81,7 +78,6 @@
                     creativity.
                     Our mission is to provide eco-friendly spaces where city life meets comfort and innovation.</p>
             </div>
-
         </div>
     </section>
 
@@ -112,7 +108,7 @@
         </div>
 
         <div class="property-card">
-            <img src="https://tinyurl.com/5cubbz26" alt="Pineview Residences">
+            <img src="https://images.unsplash.com/photo-1574362848149-11496d93a7c7" alt="Pineview Residences">
             <h3>Pineview Residences <span>↗</span></h3>
         </div>
     </section>
@@ -134,7 +130,7 @@
             </div>
             <div class="feature-card">
                 <h3>03. Community-Focused Living</h3>
-                <p>Urbanest is more than just a place to live – it’s a community. Our properties are designed with
+                <p>Urbanest is more than just a place to live – it's a community. Our properties are designed with
                     shared spaces.</p>
             </div>
             <div class="feature-card">
@@ -145,7 +141,7 @@
         </div>
 
         <div class="feature-button">
-            <a href="/property-listing.html" class="btn-primary text-decoration-none">
+            <a href="/property-listing.html" class="btn-primary">
                 View all properties →
             </a>
         </div>
@@ -160,83 +156,41 @@
                     A comprehensive and decidedly modern real estate theme we designed for all property showcase and
                     real estate websites.
                 </p>
-                <a href="/property-listing.html" class="btn-primary text-decoration-none">
+                <a href="/property-listing.html" class="btn-primary">
                     View all properties →
                 </a>
             </div>
 
-            <div class="deals-tabs">
-                <button class="tab active">Residential property</button>
-                <button class="tab">Commercial property</button>
-                <button class="tab">Industrial property</button>
-                <button class="tab">Agriculture property</button>
-            </div>
+            <!--New Properties Section -->
+            <section id="properties" class="py-5 bg-light">
+                <div class="container">
+                    <h2 class="section-title text-center mb-5">Featured Properties</h2>
+                    <p class="text-center mb-5">
+                        Discover our handpicked selection of premium properties that cater to all your needs and
+                        preferences.
+                    </p>
+
+                    <!-- Tabs -->
+                    <ul class="nav justify-content-center mb-4 property-tabs" id="propertyTab" role="tablist">
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link active" data-category="All" type="button">Residential
+                                property</button>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link" data-category="For Sale" type="button">For Sale property</button>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link" data-category="For Rent" type="button">For Rent property</button>
+                        </li>
+                    </ul>
+
+                    <!-- Cards Grid -->
+                    <div class="row" id="propertyContainer"></div>
+                </div>
+            </section>
         </div>
     </section>
 
-    <!-- Property Listings Section -->
-    <!-- <div class="row" id="propertyListings">
-    </div> -->
-    <!-- Property Listings Section -->
-    <section class="property-section">
-        <div class="property-container">
-
-            <!-- Property Card 1 -->
-            <div class="property-card">
-                <img src="https://tinyurl.com/bdku7pfj" alt="Mountain View Estates" class="property-img">
-                <div class="property-info">
-                    <p class="property-location">📍 Gulshan 1</p>
-                    <h3 class="property-title">Mountain View Estates</h3>
-                    <div class="property-details">
-                        <span>🛏 3 Bed</span>
-                        <span>🛁 2 Bath</span>
-                        <span>📐 2400 sqft</span>
-                    </div>
-                    <div class="property-footer">
-                        <p class="property-price">28,00000<span>BDT</span></p>
-                        <a href="#" class="property-btn">View →</a>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Property Card 2 -->
-            <div class="property-card">
-                <img src="https://tinyurl.com/34sh5ff9" alt="The Grove Apartments" class="property-img">
-                <div class="property-info">
-                    <p class="property-location">📍 Gulshan 2</p>
-                    <h3 class="property-title">The Grove Apartments</h3>
-                    <div class="property-details">
-                        <span>🛏 3 Bed</span>
-                        <span>🛁 2 Bath</span>
-                        <span>📐 3500 sqft</span>
-                    </div>
-                    <div class="property-footer">
-                        <p class="property-price">40,00000 <span>BDT</span></p>
-                        <a href="#" class="property-btn">View →</a>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Property Card 3 -->
-            <div class="property-card">
-                <img src="https://tinyurl.com/sbydk4t4" alt="Pineview Residences" class="property-img">
-                <div class="property-info">
-                    <p class="property-location">📍 Dhanmondi 27</p>
-                    <h3 class="property-title">Pineview Residences</h3>
-                    <div class="property-details">
-                        <span>🛏 3 Bed</span>
-                        <span>🛁 2 Bath</span>
-                        <span>📐 3200 sqft</span>
-                    </div>
-                    <div class="property-footer">
-                        <p class="property-price">36,00000 <span>BDT</span></p>
-                        <a href="#" class="property-btn">View →</a>
-                    </div>
-                </div>
-            </div>
-
-        </div>
-    </section>
 
 
     <!-- News & Articles Section -->
@@ -250,7 +204,7 @@
                 <p>
                     They understood exactly what I was looking for – a modern, eco-friendly
                     apartment in the heart of the city. The entire process was seamless, and
-                    I couldn’t be happier with my new home.
+                    I couldn't be happier with my new home.
                 </p>
                 <a href="#" class="news-btn">Read more articles →</a>
             </div>
@@ -261,33 +215,29 @@
                 <!-- Article Card 1 -->
                 <div class="news-card">
                     <div class="news-image">
-                        <img src="https://tinyurl.com/545caw3p" alt="Real Estate Trends">
+                        <img src="https://images.unsplash.com/photo-1545324418-cc1a3fa10c00" alt="Real Estate Trends">
                         <span class="tag">Housing</span>
                     </div>
                     <div class="news-info">
                         <p class="read-time">⏱ 5 min read</p>
                         <h3>Understanding the Real Estate Market Trends</h3>
                         <p>The real estate market is shaped by several interconnected factors that influence property
-                            prices, demand, and supply. One of the most important drivers is supply and demand—when more
-                            buyers are looking for homes than there are available properties, prices rise, while an
-                            oversupply tends to push prices down.</p>
+                            prices, demand, and supply.</p>
                     </div>
                 </div>
 
                 <!-- Article Card 2 -->
                 <div class="news-card">
                     <div class="news-image">
-                        <img src="https://tinyurl.com/n7f4zj4d" alt="Perfect Neighborhood">
+                        <img src="https://images.unsplash.com/photo-1582407947304-fd86f028f716"
+                            alt="Perfect Neighborhood">
                         <span class="tag tag-green">Interior</span>
                     </div>
                     <div class="news-info">
                         <p class="read-time">⏱ 6 min read</p>
                         <h3>How to Choose the Perfect Neighborhood</h3>
                         <p>Choosing the perfect neighborhood depends on balancing safety, convenience, lifestyle, and
-                            long-term value. A good starting point is to research safety by checking crime rates and
-                            talking to local residents, since a secure and well-lit area provides peace of mind.
-                            Affordability is another key factor, so it’s important to consider not just the home price
-                            but also property taxes and daily living expenses.</p>
+                            long-term value.</p>
                     </div>
                 </div>
 
@@ -297,49 +247,93 @@
 
 
     <!-- Testimonials Section -->
-    <section class="testimonials">
-        <div class="testimonials-header">
-            <h2>Real Reviews, Real Experiences</h2>
-        </div>
-
-        <div class="testimonial-container">
-            <!-- Testimonial Card -->
-            <div class="testimonial-card">
-                <p class="quote">❝</p>
-                <p class="testimonial-text">
-                    Finding my apartment through this website was so easy! The filters for budget and location saved me
-                    a lot of time. The landlord responded quickly, and the place looked exactly like the photos.
-                </p>
-                <p class="author">Sarah Ahmed, Urban Heights Resident</p>
-            </div>
-
-            <!-- Duplicate Card (for slider effect) -->
-            <div class="testimonial-card">
-                <p class="quote">❝</p>
-                <p class="testimonial-text">
-                    I moved to a new city and didn't know where to start. This platform gave me plenty of verified
-                    listings and even virtual tours. I felt safe renting through here. Highly recommended.
-                </p>
-                <p class="author">James Peterson, Urban Heights Resident</p>
-            </div>
-
-            <!-- Duplicate Card -->
-            <div class="testimonial-card">
-                <p class="quote">❝</p>
-                <p class="testimonial-text">
-                    I love how organized the website is. Within two days, I found a beautiful apartment that matched my
-                    budget. The pictures and details were 100% accurate.
-                </p>
-                <p class="author">Maria Gonzalez, Urban Heights Resident</p>
+    <div class="container testimonials ">
+        <div class="d-flex justify-content-between align-items-start">
+            <h2 class="section-title mb-4">Real Reviews, Real Experiences</h2>
+            <!-- Right-side controls (visible on all sizes; layout adapts on mobile) -->
+            <div class="slider-controls">
+                <button class="ctrl-btn" id="btnPrev" aria-label="Previous">←</button>
+                <button class="ctrl-btn" id="btnNext" aria-label="Next">→</button>
             </div>
         </div>
 
-        <!-- Navigation Arrows -->
-        <div class="testimonial-nav">
-            <button class="nav-btn prev">←</button>
-            <button class="nav-btn next">→</button>
+        <div class="slider-wrap">
+            <div class="slider" id="testimonialSlider">
+                <div class="slider-track">
+
+                    <!-- one testimonial per .slide (so we can move ONE by ONE) -->
+                    <div class="slide">
+                        <article class="t-card">
+                            <div>
+                                <div class="t-quote">❝</div>
+                                <p>Finding my apartment through this website was so easy! The filters for budget and
+                                    location saved me a lot of time. The landlord responded quickly, and the place
+                                    looked exactly like the photos.</p>
+                            </div>
+                            <div class="t-author">Sarah Ahmed, Urban Heights Resident</div>
+                        </article>
+                    </div>
+
+                    <div class="slide">
+                        <article class="t-card">
+                            <div>
+                                <div class="t-quote">❝</div>
+                                <p>I moved to a new city and didn't know where to start. This platform gave me plenty of
+                                    verified listings and even virtual tours. I felt safe renting through here. Highly
+                                    recommended.</p>
+                            </div>
+                            <div class="t-author">James Peterson, Urban Heights Resident</div>
+                        </article>
+                    </div>
+
+                    <div class="slide">
+                        <article class="t-card">
+                            <div>
+                                <div class="t-quote">❝</div>
+                                <p>I love how organized the website is. Within two days, I found a beautiful apartment
+                                    that matched my budget. The pictures and details were 100% accurate.</p>
+                            </div>
+                            <div class="t-author">Maria Gonzalez, Urban Heights Resident</div>
+                        </article>
+                    </div>
+
+                    <!-- extra slides so you can keep moving one-by-one -->
+                    <div class="slide">
+                        <article class="t-card">
+                            <div>
+                                <div class="t-quote">❝</div>
+                                <p>The support team was amazing! They answered all my questions and made sure I had
+                                    everything I needed before moving in. Smooth process!</p>
+                            </div>
+                            <div class="t-author">David Lee, Urban Heights Resident</div>
+                        </article>
+                    </div>
+
+                    <div class="slide">
+                        <article class="t-card">
+                            <div>
+                                <div class="t-quote">❝</div>
+                                <p>This platform helped me find a pet-friendly apartment easily. The filters are
+                                    fantastic and saved me hours of searching.</p>
+                            </div>
+                            <div class="t-author">Emma Watson, Urban Heights Resident</div>
+                        </article>
+                    </div>
+
+                    <div class="slide">
+                        <article class="t-card">
+                            <div>
+                                <div class="t-quote">❝</div>
+                                <p>Best rental site I’ve ever used! The details and virtual tours were super helpful,
+                                    and I didn’t feel stressed about moving.</p>
+                            </div>
+                            <div class="t-author">Michael Brown, Urban Heights Resident</div>
+                        </article>
+                    </div>
+                </div>
+            </div>
         </div>
-    </section>
+    </div>
 
 
     <!-- FAQ Section -->
@@ -369,9 +363,7 @@
                         <strong>We're offering eco-friendly types properties, </strong> including apartments,
                         townhouses, and lofts. Our properties are designed to suit different lifestyles, whether you're
                         a single professional, a couple, or a family looking for a sustainable home in the heart of the
-                        city. Each property is equipped with modern amenities and is located in vibrant neighborhoods
-                        that promote a sense of community and convenience.
-
+                        city.
                     </div>
                 </div>
             </div>
@@ -387,11 +379,6 @@
                     <div class="accordion-body">
                         <strong>As You when wnat, </strong> But you can schedule a property tour by contacting our
                         customer service team through the contact form on our website or by calling our office directly.
-                        Our team will be happy to assist you in finding a suitable time for your visit.
-                        We recommend scheduling tours in advance to ensure availability, especially for popular
-                        properties. During the tour, you will have the opportunity to explore the property, ask
-                        questions, and get a feel for the neighborhood. Our knowledgeable staff will be there to guide
-                        you and provide any additional information you may need.
                     </div>
                 </div>
             </div>
@@ -406,10 +393,7 @@
                     data-bs-parent="#accordionExample">
                     <div class="accordion-body">
                         <strong>Yes, You can.</strong> Our offers a wide range of modern, eco-friendly urban living
-                        spaces, including apartments, townhouses, and lofts. Our properties are designed to suit
-                        different lifestyles, whether you're a single professional, a couple, or a family looking for a
-                        sustainable home in the heart of the city. Each property is equipped with modern amenities and
-                        is located in vibrant neighborhoods that promote a sense of community and convenience.
+                        spaces, including apartments, townhouses, and lofts.
                     </div>
                 </div>
             </div>
@@ -460,6 +444,7 @@
                 </ul>
             </div>
         </div>
+        <marquee style="font-size: 3.5rem;" loop="" direction="left">GET IN TOUCH WITH US</marquee>
 
         <!-- Bottom Bar -->
         <div class="footer-bottom">
@@ -471,90 +456,8 @@
         </div>
     </footer>
 
-    <!-- <script src="./js/script.js"></script> -->
-    <script src="js/load-navbar.js"></script>
-    <script src="js/script.js"></script>
+    <script src="./js/script.js"></script>
 
-    <!-- <script>
-    // ===== Scroll animation for sections =====
-    const faders = document.querySelectorAll(".fade-in, section, .property-card, .feature-card, .news-card, .testimonial-card");
-
-    const appearOptions = {
-      threshold: 0.2,
-      rootMargin: "0px 0px -50px 0px"
-    };
-
-    const appearOnScroll = new IntersectionObserver(function (entries, appearOnScroll) {
-      entries.forEach(entry => {
-        if (!entry.isIntersecting) return;
-        entry.target.classList.add("visible");
-        appearOnScroll.unobserve(entry.target);
-      });
-    }, appearOptions);
-
-    faders.forEach(fader => {
-      fader.classList.add("fade-in");
-      appearOnScroll.observe(fader);
-    });
-
-
-    // ===== Hero Buttons =====
-    document.querySelector(".btn-primary").addEventListener("click", () => {
-      document.querySelector(".properties").scrollIntoView({ behavior: "smooth" });
-    });
-
-    document.querySelector(".btn-outline").addEventListener("click", () => {
-      document.querySelector(".about").scrollIntoView({ behavior: "smooth" });
-    });
-
-
-    // ===== Deals Tabs =====
-    const tabs = document.querySelectorAll(".deals-tabs .tab");
-    const propertyListings = document.getElementById("propertyListings");
-
-    tabs.forEach(tab => {
-      tab.addEventListener("click", function () {
-        tabs.forEach(t => t.classList.remove("active"));
-        this.classList.add("active");
-
-        // Fake dynamic content
-        propertyListings.innerHTML = `
-          <div class="col-md-4 mb-4 fade-in visible">
-            <div class="card p-3 shadow-sm">
-              <img src="https://picsum.photos/400/250?random=${Math.floor(Math.random()*100)}" class="card-img-top" alt="Property">
-              <div class="card-body">
-                <h5 class="card-title">${this.textContent} Example</h5>
-                <p class="card-text">Sample property under "${this.textContent}".</p>
-                <a href="#" class="btn btn-success">View More</a>
-              </div>
-            </div>
-          </div>
-        `;
-      });
-    });
-
-
-    // ===== Testimonials Navigation =====
-    const testimonialContainer = document.querySelector(".testimonial-container");
-    document.querySelector(".nav-btn.next").addEventListener("click", () => {
-      testimonialContainer.scrollBy({ left: 350, behavior: "smooth" });
-    });
-    document.querySelector(".nav-btn.prev").addEventListener("click", () => {
-      testimonialContainer.scrollBy({ left: -350, behavior: "smooth" });
-    });
-
-
-    // ===== FAQ Toggle Animation =====
-    const faqItems = document.querySelectorAll(".faq-item");
-    faqItems.forEach(item => {
-      const question = item.querySelector(".faq-question");
-      if (question) {
-        question.addEventListener("click", () => {
-          item.classList.toggle("active");
-        });
-      }
-    });
-  </script> -->
 
 </body>
 
