@@ -1,0 +1,136 @@
+:root {
+            --primary: #0B2D27;
+            --accent: #aafd81;
+            --white: #ffffff;
+            --light: #f1f3f6;
+            --shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+        }
+        
+        body {
+            background-color: #f8f9fa;
+            color: var(--primary);
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            padding: 20px;
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+        }
+        
+        .application-container {
+            background: var(--white);
+            border-radius: 15px;
+            box-shadow: var(--shadow);
+            overflow: hidden;
+            max-width: 1000px;
+            margin: 0 auto;
+        }
+        
+        .application-header {
+            background: linear-gradient(to right, var(--primary), var(--accent));
+            color: var(--white);
+            padding: 30px;
+            text-align: center;
+        }
+        
+        .application-header h1 {
+            font-size: 2.5rem;
+            font-weight: 700;
+            margin-bottom: 10px;
+        }
+        
+        .application-header p {
+            font-size: 1.2rem;
+            opacity: 0.9;
+        }
+        
+        .application-body {
+            padding: 30px;
+        }
+        
+        .form-section {
+            margin-bottom: 25px;
+        }
+        
+        .form-section-title {
+            font-size: 1.2rem;
+            font-weight: 600;
+            color: var(--accent);
+            margin-bottom: 20px;
+            padding-bottom: 10px;
+            border-bottom: 2px solid #eee;
+        }
+        
+        .form-label {
+            font-weight: 600;
+            color: var(--primary);
+            margin-bottom: 8px;
+        }
+        
+        .form-control, .form-select {
+            padding: 12px 15px;
+            border: 2px solid #e0e0e0;
+            border-radius: 8px;
+            transition: all 0.3s;
+        }
+        
+        .form-control:focus, .form-select:focus {
+            border-color: var(--accent);
+            box-shadow: 0 0 0 0.25rem rgba(9, 132, 227, 0.25);
+        }
+        
+        .checkbox-container {
+            display: flex;
+            align-items: center;
+            margin: 25px 0;
+        }
+        
+        .form-check-input {
+            width: 20px;
+            height: 20px;
+            margin-right: 10px;
+            accent-color: var(--accent);
+        }
+        
+        .form-check-label {
+            font-weight: 500;
+        }
+        
+        .btn-submit {
+            background: var(--accent);
+            color: var(--white);
+            border: none;
+            padding: 15px 40px;
+            border-radius: 50px;
+            font-weight: 600;
+            font-size: 1.1rem;
+            transition: all 0.3s ease;
+            width: 100%;
+            margin-top: 10px;
+        }
+        
+        .btn-submit:hover {
+            background: var(--primary);
+            transform: translateY(-3px);
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+        }
+        
+        /* Responsive adjustments */
+        @media (max-width: 768px) {
+            .application-header h1 {
+                font-size: 2rem;
+            }
+            
+            .application-header p {
+                font-size: 1rem;
+            }
+            
+            .application-body {
+                padding: 20px;
+            }
+        }
+        
+        .optional-text {
+            color: #888;
+            font-size: 0.9rem;
+            font-weight: normal;
+        }

@@ -1,0 +1,167 @@
+:root {
+            --primary: #0B2D27;
+            --accent: #aafd81;
+            --white: #ffffff;
+            --light: #f1f3f6;
+            --shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+        }
+        
+        body {
+            background-color: #f8f9fa;
+            color: var(--primary);
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        
+        .section-header {
+            text-align: center;
+            margin-bottom: 50px;
+        }
+        
+        .section-header h1 {
+            font-size: 2.8rem;
+            font-weight: 700;
+            color: var(--primary);
+            margin-bottom: 15px;
+        }
+        
+        .section-header h2 {
+            font-size: 1.5rem;
+            color: #636e72;
+            font-weight: 400;
+        }
+        
+        .agent-card {
+            background: var(--white);
+            border-radius: 15px;
+            overflow: hidden;
+            box-shadow: var(--shadow);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            height: 100%;
+            margin-bottom: 30px;
+        }
+        
+        .agent-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 15px 40px rgba(0, 0, 0, 0.15);
+        }
+        
+        .agent-header {
+            background: linear-gradient(to right, var(--primary), var(--accent));
+            color: var(--primary);
+            padding: 25px 20px;
+            text-align: end;
+        }
+        
+        .agent-rating {
+            font-size: 1.2rem;
+            font-weight: 600;
+            margin-bottom: 5px;
+        }
+        
+        .agent-reviews {
+            font-size: 0.9rem;
+            opacity: 0.9;
+        }
+        
+        .agent-image {
+            width: 120px;
+            height: 120px;
+            border-radius: 50%;
+            border: 4px solid var(--white);
+            margin: -60px auto 20px;
+            overflow: hidden;
+            background-color: var(--white);
+            box-shadow: var(--shadow);
+        }
+        
+        .agent-image img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+        
+        .agent-info {
+            padding: 20px;
+            text-align: center;
+        }
+        
+        .agent-name {
+            font-size: 1.5rem;
+            font-weight: 700;
+            margin-bottom: 5px;
+            color: var(--primary);
+        }
+        
+        .agent-role {
+            color: var(--primary);
+            margin-bottom: 20px;
+            font-size: 1rem;
+        }
+        
+        .agent-details {
+            margin-bottom: 25px;
+        }
+        
+        .detail-item {
+            display: flex;
+            justify-content: space-between;
+            padding: 10px 0;
+            border-bottom: 1px solid #eee;
+        }
+        
+        .detail-item:last-child {
+            border-bottom: none;
+        }
+        
+        .detail-label {
+            color: #636e72;
+            font-weight: 500;
+        }
+        
+        .detail-value {
+            font-weight: 600;
+            color: var(--primary);
+        }
+        
+        .btn-contact {
+            background: var(--accent);
+            color: var(--white);
+            border: none;
+            padding: 12px 30px;
+            border-radius: 50px;
+            font-weight: 600;
+            transition: all 0.3s ease;
+            width: 100%;
+            margin-top: 15px;
+        }
+        
+        .btn-contact:hover {
+            background: var(--primary);
+            transform: translateY(-3px);
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+        }
+        
+        /* Responsive adjustments */
+        @media (max-width: 992px) {
+            .agent-card {
+                margin-bottom: 50px;
+            }
+            
+            .agent-image {
+                margin-top: -50px;
+            }
+        }
+        
+        @media (max-width: 768px) {
+            .section-header h1 {
+                font-size: 2.2rem;
+            }
+            
+            .section-header h2 {
+                font-size: 1.2rem;
+            }
+        }
+        
+        .agents-container {
+            padding: 20px 0 50px;
+        }
