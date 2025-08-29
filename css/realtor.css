@@ -6,16 +6,6 @@
             --shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
         }
         
-        body {
-            background-color: #f8f9fa;
-            color: var(--primary);
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            padding: 20px;
-            min-height: 100vh;
-            display: flex;
-            align-items: center;
-        }
-        
         .application-container {
             background: var(--white);
             border-radius: 15px;
