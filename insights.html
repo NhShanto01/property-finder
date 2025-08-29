@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UrbanNest Insights</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Bootstrap 5 CSS & JS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/insights.css">
+</head>
+<body>
+    <!-- navbar -->
+    <nav class="navbar sticky-top navbar-expand-lg navbar-light bg-light px-4">
+        <a class="navbar-brand fw-bold" href="#">
+            Urban <span class="text-success">Nest</span>
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
+            aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+            <ul class="navbar-nav mx-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="index.html">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="property-listing.html">Properties</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="Agent.html">Find Agent</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="Realtor.html">Become a Realtor</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="insights.html">Insights</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link active" href="about.html">About</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="contact.html">Contact</a>
+                </li>
+            </ul>
+
+            <div class="d-flex align-items-center">
+
+
+                <!-- Sign In Button -->
+                <a class="text-decoration-none" href="Sign-In.html"><button
+                        class="btn btn-outline-success fw-bold d-flex align-items-center">
+                        Sign in
+                    </button></a>
+
+            </div>
+        </div>
+    </nav>
+
+    <main>
+        <!-- Insights Listing Page -->
+        <section id="insights-listing">
+            <!-- Hero Section -->
+            <section class="insights-hero">
+                <div class="container">
+                    <h1>UrbanNest Insights</h1>
+                    <p>Expert advice, market trends, and interior inspiration for your property journey</p>
+                </div>
+            </section>
+
+            <!-- Filter Section -->
+            <section class="insights-filter">
+                <div class="container">
+                    <div class="filter-container">
+                        <button class="filter-button active" data-filter="all">All</button>
+                        <button class="filter-button" data-filter="market-trends">Market Trends</button>
+                        <button class="filter-button" data-filter="interior-design">Interior Design</button>
+                        <button class="filter-button" data-filter="investment">Investment</button>
+                        <button class="filter-button" data-filter="neighborhood-guides">Neighborhood Guides</button>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Insights Grid -->
+            <section class="insights-grid">
+                <div class="container">
+                    <div class="grid-container" id="insights-container">
+                        <!-- Insight cards will be dynamically inserted here -->
+                    </div>
+
+                    <!-- Pagination -->
+                    <div class="pagination" id="pagination-container">
+                        <!-- Pagination buttons will be dynamically inserted here -->
+                    </div>
+                </div>
+            </section>
+
+            
+        </section>
+
+        <!-- Blog Detail Page (initially hidden) -->
+        <section id="blog-detail" class="blog-detail">
+            <div class="container">
+                <div class="back-button" id="back-button">
+                    <i class="fas fa-arrow-left"></i>
+                    <span>Back to Insights</span>
+                </div>
+            </div>
+            
+            <!-- Blog Hero Section -->
+            <section class="blog-hero">
+                <div class="container">
+                    <div class="blog-hero-content">
+                        <span class="blog-category" id="blog-category">Home Improvement</span>
+                        <h1 class="blog-title" id="blog-title">Renovations That Add Value to Your Property</h1>
+                        <div class="blog-meta">
+                            <div class="blog-author">
+                                <img id="blog-author-avatar" src="" alt="Author" class="author-avatar-lg">
+                                <span id="blog-author-name"></span>
+                            </div>
+                            <span id="blog-date"></span>
+                            <span id="blog-read-time"></span>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Blog Content -->
+            <section class="blog-content">
+                <div class="container">
+                    <div class="blog-container">
+                        <div class="blog-image">
+                            <img id="blog-image" src="" alt="">
+                        </div>
+                        
+                        <div class="blog-text" id="blog-text">
+                            <!-- Content will be inserted here -->
+                        </div>
+                        
+                        <!-- Share Section -->
+                        <div class="share-section">
+                            <span class="share-text">Share this article:</span>
+                            <div class="share-buttons">
+                                <a href="#" class="share-button"><i class="fab fa-facebook-f"></i></a>
+                                <a href="#" class="share-button"><i class="fab fa-twitter"></i></a>
+                                <a href="#" class="share-button"><i class="fab fa-linkedin-in"></i></a>
+                                <a href="#" class="share-button"><i class="fab fa-pinterest-p"></i></a>
+                            </div>
+                        </div>
+                        
+                        <!-- Author Bio -->
+                        <div class="author-bio">
+                            <img id="author-bio-avatar" src="" alt="Author" class="author-bio-avatar">
+                            <div class="author-bio-content">
+                                <h3 id="author-bio-name">About Emma Wilson</h3>
+                                <p id="author-bio-text">Emma is a home improvement expert with over 10 years of experience in property renovation and design. She specializes in helping homeowners maximize their property value through strategic renovations.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-top">
+            <!-- Left Column -->
+            <div class="footer-col">
+                <h2 class="logo">Urban <span>Nest</span></h2>
+                <p>© UrbanNest dedicated to revolutionizing the real estate experience. Through innovation and
+                    excellence</p>
+            </div>
+
+            <!-- Contact Column -->
+            <div class="footer-col">
+                <h3>Contact</h3>
+                <p>House #12, Road #5, Sector #7,<br>Uttara, Dhaka-1230,<br>Bangladesh</p>
+                <p><a href="mailto:info@urban-nest.com">info@urban-nest.com</a></p>
+                <p><a href="tel:01551234774">0155-123-4774</a></p>
+            </div>
+
+            <!-- Pages Column -->
+            <div class="footer-col">
+                <h3>Pages</h3>
+                <ul>
+                    <li><a href="#">Styleguide</a></li>
+                    <li><a href="#">Licenses</a></li>
+                    <li><a href="#">Changelog</a></li>
+                    <li><a href="#">Instructions</a></li>
+                    <li><a href="#">Password Protected</a></li>
+                    <li><a href="#">404 Page</a></li>
+                </ul>
+            </div>
+
+            <!-- Socials Column -->
+            <div class="footer-col">
+                <h3>Socials</h3>
+                <ul>
+                    <li><a href="#">Facebook</a></li>
+                    <li><a href="#">Instagram</a></li>
+                    <li><a href="#">LinkedIn</a></li>
+                    <li><a href="#">Clutch</a></li>
+                    <li><a href="#">Trustpilot</a></li>
+                </ul>
+            </div>
+        </div>
+        <marquee style="font-size: 3.5rem;" loop="" direction="left">GET IN TOUCH WITH US</marquee>
+
+        <!-- Bottom Bar -->
+        <div class="footer-bottom">
+            <p>All Rights Reserved. Powered by <a href="#">Web Programming</a></p>
+            <div class="footer-links">
+                <a href="#">Privacy Policy</a> |
+                <a href="#">Cookies</a>
+            </div>
+        </div>
+    </footer>
+    <script src="./js/insights.js"></script>
+</body>
+
+</html>
